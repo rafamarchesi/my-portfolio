@@ -26,6 +26,11 @@ let theme = createTheme({
     body1:{
       fontSize: '18px'
 
+    },
+    body2:{
+      fontSize: '22px',
+      fontWeight: 'bold',
+
     }
   },
 });

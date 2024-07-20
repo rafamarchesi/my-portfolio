@@ -14,7 +14,7 @@ const About = () => {
 
   const StyledImg = styled("img")(()=>({    
     width: '100%',
-   borderRadius: '0 100% 0 0'
+    borderRadius: '0 100% 0 0'
        
   }))
 
