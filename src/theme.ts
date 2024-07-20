@@ -19,6 +19,14 @@ let theme = createTheme({
       color: 'black', 
       fontSize: '38px'
     },
+    h3: {
+      fontSize: '64px',
+      fontWeight: 'bold',
+    },
+    body1:{
+      fontSize: '18px'
+
+    }
   },
 });
 

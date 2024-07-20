@@ -21,7 +21,7 @@ const Hero = () => {
               <Typography variant="h2" textAlign="center">Eu construo e desenvolvo sites!</Typography>
               <Grid container spacing={2} display="flex" justifyContent="center" pt={3}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">                
-                  <StyledButton>
+                  <StyledButton onClick={() => console.log("download")}>
                     <DownloadIcon /> 
                     <Typography textAlign="center">
                       Download CV
@@ -29,7 +29,7 @@ const Hero = () => {
                   </StyledButton>
                 </Grid>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton>
+                  <StyledButton onClick={() => console.log("contact")}>
                     <EmailIcon /> 
                     <Typography textAlign="center">
                       Contact Me
