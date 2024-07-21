@@ -30,29 +30,22 @@ const Contact = () => {
               Seu próximo projeto começa aqui! Entre em contato para discutirmos como podemos colaborar e alcançar seus objetivos. Estou ansiosa para ouvir de você!
             </Typography>            
             <Box display="flex" alignItems="center" mr={2}>
-              <Typography variant="body2">
+              <Typography variant="body2" mr={2}>
                 REDES SOCIAIS:
               </Typography>
-              <Grid container spacing={1} md={6}>
-                
+              <Grid container spacing={1} md={6}>                
                     <SocialButton href="https://wa.me/5518997872265">
                       <WhatsAppIcon fontSize='large'/>
-                    </SocialButton>
-                  
-                  
+                    </SocialButton>     
                     <SocialButton href="https://www.linkedin.com/in/rafaela-marchesi-barrionuevo-81ba7b10b/">
                       <LinkedInIcon fontSize='large'/>
                     </SocialButton>
-                 
-                  
                     <SocialButton href="https://www.instagram.com/rafamarchesi/">
                       <InstagramIcon fontSize='large'/>
-                    </SocialButton>
-                 
+                    </SocialButton>                 
                     <SocialButton href="https://github.com/rafamarchesi">
                       <GitHubIcon fontSize='large'/>
-                    </SocialButton>
-                  
+                    </SocialButton>                  
                 </Grid>              
             </Box>
           </Grid>

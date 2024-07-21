@@ -22,6 +22,13 @@ let theme = createTheme({
     h3: {
       fontSize: '64px',
       fontWeight: 'bold',
+      marginBottom: '20px',
+      lineHeight: 1
+    },
+    h4: {
+      fontSize: '50px',
+      fontWeight: 'bold',      
+      lineHeight: 1
     },
     body1:{
       fontSize: '18px'
@@ -29,8 +36,7 @@ let theme = createTheme({
     },
     body2:{
       fontSize: '22px',
-      fontWeight: 'bold',
-
+      fontWeight: 'bold'
     }
   },
 });
