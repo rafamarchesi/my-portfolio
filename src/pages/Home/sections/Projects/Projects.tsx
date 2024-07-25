@@ -1,7 +1,19 @@
 import React, { useState } from 'react';
 import { Container, styled, Typography, Box } from '@mui/material';
-import Programadora from '../../../../assets/images/programadora.png';
 import StyledButton from '../../../../components/StyledButton';
+import Cabonnet from '../../../../assets/images/portfolio/icones/cabonnet.jpg';
+import Icovet from '../../../../assets/images/portfolio/icones/icovet.jpg';
+import InstitutoColuna from '../../../../assets/images/portfolio/icones/instituto-coluna.jpg';
+import MadereiraPrudentao from '../../../../assets/images/portfolio/icones/madereira-prudentao.jpg';
+import Pinheiro from '../../../../assets/images/portfolio/icones/pinheiro.jpg';
+import Umoe from '../../../../assets/images/portfolio/icones/umoe.jpg';
+import Cantagallo from '../../../../assets/images/portfolio/icones/restaurante-cantagallo.jpg';
+import Hcred from '../../../../assets/images/portfolio/icones/hcred.jpg';
+import VxLog from '../../../../assets/images/portfolio/icones/vx-log.jpg';
+import Multiplus from '../../../../assets/images/portfolio/icones/multiplus.jpg';
+import RogerioLeal from '../../../../assets/images/portfolio/icones/rogerio-leal.jpg';
+import Castilho from '../../../../assets/images/portfolio/icones/castilho.jpg';
+
 
 const StyledProjects = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
@@ -68,16 +80,18 @@ const ProjectSubtitle = styled(Typography)(({ theme }) => ({
 }));
 
 const allProjects = [
-  { imgSrc: Programadora, title: 'Projeto 1', subtitle: 'Subtítulo 1' },
-  { imgSrc: Programadora, title: 'Projeto 2', subtitle: 'Subtítulo 2' },
-  { imgSrc: Programadora, title: 'Projeto 3', subtitle: 'Subtítulo 3' },
-  { imgSrc: Programadora, title: 'Projeto 4', subtitle: 'Subtítulo 4' },
-  { imgSrc: Programadora, title: 'Projeto 5', subtitle: 'Subtítulo 5' },
-  { imgSrc: Programadora, title: 'Projeto 6', subtitle: 'Subtítulo 6' },
-  { imgSrc: Programadora, title: 'Projeto 7', subtitle: 'Subtítulo 7' },
-  { imgSrc: Programadora, title: 'Projeto 8', subtitle: 'Subtítulo 8' },
-  { imgSrc: Programadora, title: 'Projeto 5', subtitle: 'Subtítulo 5' },
-  { imgSrc: Programadora, title: 'Projeto 6', subtitle: 'Subtítulo 6' },
+  { imgSrc: Cabonnet, title: 'Cabonnet', subtitle: 'Subtítulo 1' },
+  { imgSrc: Icovet, title: 'Icovet', subtitle: 'Subtítulo 2' },
+  { imgSrc: InstitutoColuna, title: 'Instituto da Coluna', subtitle: 'Subtítulo 3' },
+  { imgSrc: MadereiraPrudentao, title: 'Madereira Prudentão', subtitle: 'Subtítulo 4' },
+  { imgSrc: Pinheiro, title: 'Pinheiro & D`arce', subtitle: 'Subtítulo 5' },
+  { imgSrc: Umoe, title: 'Umoe', subtitle: 'Subtítulo 6' },
+  { imgSrc: VxLog, title: 'Vx Log', subtitle: 'Subtítulo 7' },
+  { imgSrc: Cantagallo, title: 'Restaurante Cantagallo', subtitle: 'Subtítulo 8' },
+  { imgSrc: Hcred, title: 'HCred', subtitle: 'Subtítulo 5' },
+  { imgSrc: Multiplus, title: 'Colégio Multiplus', subtitle: 'Subtítulo 6' },
+  { imgSrc: RogerioLeal, title: 'Rogério Leal', subtitle: 'Subtítulo 6' },
+  { imgSrc: Castilho, title: 'Oftalmologia Castilho', subtitle: 'Subtítulo 6' },
   
  
 ];

@@ -6,6 +6,7 @@ import Skills from './sections/Skills/Skills';
 import Services from './sections/Services/Services';
 import Footer from '../../components/Footer/Footer';
 import FloatingButton from '../../components/FloatingButton'; 
+import Projects from './sections/Projects/Projects';
 
 const Home = () => {
   return (
@@ -15,7 +16,8 @@ const Home = () => {
       <About />
       <Services />
       <Skills />
-      <Contact />
+      <Projects />
+      <Contact />      
       <Footer />
       <FloatingButton /> 
     </>
