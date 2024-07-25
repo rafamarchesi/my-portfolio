@@ -16,6 +16,16 @@ const NavBar = () => {
     setDrawerOpen(!drawerOpen);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const sectionElement = document.getElementById(sectionId);
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (isMobile) {
+      setDrawerOpen(false); // Fecha o drawer após clicar no link no modo mobile
+    }
+  };
+
   const listItemIconStyles = {
     color: theme.palette.primary.main,
     display: 'flex',
@@ -56,7 +66,7 @@ const NavBar = () => {
       width: 200,
       justifyContent: 'center',
       alignItems: 'end',
-      position: 'absolute', // ensures the drawer does not scroll with content
+      position: 'absolute',
     },
   };
 
@@ -88,27 +98,27 @@ const NavBar = () => {
         <Box sx={boxStyles}>
           <List>
             <ListItem>
-              <ListItemIcon sx={listItemIconStyles} data-tooltip="About">
+              <ListItemIcon sx={listItemIconStyles} data-tooltip="About" onClick={() => scrollToSection('about')}>
                 <Face3Icon fontSize="medium" />
               </ListItemIcon>
             </ListItem>
             <ListItem>
-              <ListItemIcon sx={listItemIconStyles} data-tooltip="Skills">
-                <DesignServicesIcon fontSize="medium" />
-              </ListItemIcon>
-            </ListItem>
-            <ListItem>
-              <ListItemIcon sx={listItemIconStyles} data-tooltip="Projects">
-                <CodeIcon fontSize="medium" />
-              </ListItemIcon>
-            </ListItem>
-            <ListItem>
-              <ListItemIcon sx={listItemIconStyles} data-tooltip="Contact">
+              <ListItemIcon sx={listItemIconStyles} data-tooltip="Serviços" onClick={() => scrollToSection('services')}>
                 <PhonelinkIcon fontSize="medium" />
               </ListItemIcon>
             </ListItem>
             <ListItem>
-              <ListItemIcon sx={listItemIconStyles} data-tooltip="Email">
+              <ListItemIcon sx={listItemIconStyles} data-tooltip="Skills" onClick={() => scrollToSection('skills')}>
+                <DesignServicesIcon fontSize="medium" />
+              </ListItemIcon>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon sx={listItemIconStyles} data-tooltip="Projects" onClick={() => scrollToSection('projects')}>
+                <CodeIcon fontSize="medium" />
+              </ListItemIcon>
+            </ListItem>           
+            <ListItem>
+              <ListItemIcon sx={listItemIconStyles} data-tooltip="Contato" onClick={() => scrollToSection('contact')}>
                 <ContactMailIcon fontSize="medium" />
               </ListItemIcon>
             </ListItem>
