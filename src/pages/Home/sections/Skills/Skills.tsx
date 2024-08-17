@@ -59,8 +59,7 @@ const skills = [
 
 const Skills = () => {
   const settings = {
-    dots: true,
-    
+    dots: true,    
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -70,19 +69,21 @@ const Skills = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          arrows: false
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
+          arrows: false
         },
       },
     ],
   };
 
   return (
-    <StyledSkills>
+    <StyledSkills id="skills">
       <Container>
         <Typography variant="h3" gutterBottom>Skills</Typography>
         <StyledSlider {...settings}>

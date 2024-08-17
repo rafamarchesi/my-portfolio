@@ -22,7 +22,7 @@ const NavBar = () => {
       sectionElement.scrollIntoView({ behavior: 'smooth' });
     }
     if (isMobile) {
-      setDrawerOpen(false); // Fecha o drawer após clicar no link no modo mobile
+      setDrawerOpen(false); 
     }
   };
 
@@ -49,7 +49,13 @@ const NavBar = () => {
 
   const toolbarStyles = {
     justifyContent: 'flex-end',
-    display: { xs: 'flex', sm: 'none' }
+    display: { sm: 'none' }
+  };
+
+  const appBarStyles = {
+    backgroundColor: theme.palette.common.white,
+    position: 'static',
+    display: { xs: 'none', sm: 'flex' } // Hide on small screens
   };
 
   const boxStyles = {
@@ -72,19 +78,17 @@ const NavBar = () => {
 
   return (
     <>
-      <AppBar style={{ backgroundColor: theme.palette.common.white, position: 'static' }}>
+      <AppBar sx={appBarStyles}>
         <Toolbar sx={toolbarStyles}>
-          {isMobile && (
-            <IconButton
-              edge="end"
-              color="inherit"
-              aria-label="menu"
-              onClick={handleDrawerToggle}
-              sx={{ color: theme.palette.primary.main }}
-            >
-              <MenuIcon fontSize="large" />
-            </IconButton>
-          )}
+          <IconButton
+            edge="end"
+            color="inherit"
+            aria-label="menu"
+            onClick={handleDrawerToggle}
+            sx={{ color: theme.palette.primary.main }}
+          >
+            <MenuIcon fontSize="large" />
+          </IconButton>
         </Toolbar>
       </AppBar>
       <Drawer

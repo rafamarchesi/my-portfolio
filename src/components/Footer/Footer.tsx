@@ -5,6 +5,7 @@ const StyledFooter = styled("div")(({ theme }) => ({
   display: "flex",
   color: theme.palette.common.white,
   justifyContent: "center",
+  textAlign: "center",
   padding: "20px"
 }));
 
@@ -12,8 +13,7 @@ const Footer = () => {
   return (
     <>
     <StyledFooter>
-    <Typography variant="body1" >COPYRIGHT © 2024 - Rafaela Marchesi. Todos os direitos reservados.</Typography>
-      
+      <Typography variant="body1" >COPYRIGHT © 2024 - Rafaela Marchesi. Todos os direitos reservados.</Typography>      
     </StyledFooter>
       
     </>

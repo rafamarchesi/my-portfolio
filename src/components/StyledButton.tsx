@@ -31,8 +31,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
   return (
     <>
       <StyledButton onClick={onClick}>
-        {children}
-        
+        {children}        
       </StyledButton>
     </>
   )

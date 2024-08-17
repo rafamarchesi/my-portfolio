@@ -30,14 +30,27 @@ let theme = createTheme({
       fontWeight: 'bold',      
       lineHeight: 1
     },
-    body1:{
+    body1: {
       fontSize: '18px'
-
     },
-    body2:{
+    body2: {
       fontSize: '22px',
       fontWeight: 'bold'
     }
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          margin: 0,
+          padding: 0,
+        },
+        '.transition-height': {
+          overflow: 'hidden',
+          transition: 'height 10s ease',
+        },
+      },
+    },
   },
 });
 
