@@ -1,4 +1,3 @@
-import React from 'react';
 import { styled } from '@mui/material';
 import Logo from '../assets/images/icon.png';
 
