@@ -114,6 +114,17 @@ import LeoMorato4 from '../../../../assets/images/portfolio/telas/leo-morato/equ
 
 const allProjects: Project[] = [
   { 
+    imgSrc: LeoMorato, 
+    modalImgSrcs: [
+      LeoMorato1,
+      LeoMorato2,
+      LeoMorato3,
+      LeoMorato4
+    ],
+    title: 'Leo Morato Arquitetura', 
+    subtitle: 'Desenvolvimento FullStack' 
+  },
+  { 
     imgSrc: Cantagallo, 
     modalImgSrcs: [
       Canta1,
@@ -261,18 +272,8 @@ const allProjects: Project[] = [
     ],
     title: 'Concreta Construções', 
     subtitle: 'Desenvolvimento BackEnd' 
-  },
-  { 
-    imgSrc: LeoMorato, 
-    modalImgSrcs: [
-      LeoMorato1,
-      LeoMorato2,
-      LeoMorato3,
-      LeoMorato4
-    ],
-    title: 'Leo Morato Arquitetura', 
-    subtitle: 'Desenvolvimento FullStack' 
   }
+  
 ];
 
 

@@ -8,10 +8,10 @@ const App = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setHideLoader(true); // Inicia a transição de saída
+      setHideLoader(true); 
       setTimeout(() => {
-        setLoading(false); // Remove o loader após a transição
-      }, 500); // Deve corresponder à duração da transição do CSS
+        setLoading(false); 
+      }, 500); 
     }, 2000); 
 
     return () => clearTimeout(timer);

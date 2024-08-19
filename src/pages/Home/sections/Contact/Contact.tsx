@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Grid, Typography, styled, Box } from '@mui/material';
 import Programadora from '../../../../assets/images/programadora.png';
 import SocialButton from '../../../../components/SocialButton';
@@ -7,7 +6,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-// Estilos personalizados
 const StyledContact = styled('div')(({ theme }) => ({
   backgroundColor: theme.palette.secondary.main,
   height: '100vh',
@@ -80,7 +78,7 @@ const Contact = () => {
               <SocialTitleTypography variant="body2">
                 REDES SOCIAIS:
               </SocialTitleTypography>
-              <SocialGrid container spacing={1} md={6}>
+              <SocialGrid>
                 <SocialButton href="https://wa.me/5518997872265">
                   <WhatsAppIcon fontSize='large'/>
                 </SocialButton>     

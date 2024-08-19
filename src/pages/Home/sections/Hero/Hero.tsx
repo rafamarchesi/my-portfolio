@@ -32,37 +32,40 @@ const Hero = () => {
     }, 100);
   };
 
+  const StyledGrid = styled(Grid)(() => ({
+    display: 'flex',
+    justifyContent: 'center',
+  }));
+
   return (
-    <>
-      <StyledHero>
-        <Container>
-          <Grid container spacing={2}>
-            <Grid item xs={12}>
-              <Typography variant="h1" textAlign="center" color="primary">Olá, eu sou Rafa</Typography>
-              <Typography variant="h2" textAlign="center">Eu construo e desenvolvo sites!</Typography>
-              <Grid container spacing={2} display="flex" justifyContent="center" pt={3}>
-                <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton onClick={handleDownload}>
-                    <DownloadIcon /> 
-                    <Typography textAlign="center">
-                      Download CV
-                    </Typography>
-                  </StyledButton>
-                </Grid>
-                <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton onClick={handleContactClick}>
-                    <EmailIcon /> 
-                    <Typography textAlign="center">
-                      Contact Me
-                    </Typography>
-                  </StyledButton>                  
-                </Grid>
-              </Grid>
+    <StyledHero>
+      <Container>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <Typography variant="h1" textAlign="center" color="primary">Olá, eu sou Rafa</Typography>
+            <Typography variant="h2" textAlign="center">Eu construo e desenvolvo sites!</Typography>
+            <Grid container spacing={2} justifyContent="center" pt={3}>
+              <StyledGrid item xs={12} md={4}>
+                <StyledButton onClick={handleDownload}>
+                  <DownloadIcon /> 
+                  <Typography textAlign="center">
+                    Download CV
+                  </Typography>
+                </StyledButton>
+              </StyledGrid>
+              <StyledGrid item xs={12} md={4}>
+                <StyledButton onClick={handleContactClick}>
+                  <EmailIcon /> 
+                  <Typography textAlign="center">
+                    Contact Me
+                  </Typography>
+                </StyledButton>                  
+              </StyledGrid>
             </Grid>
           </Grid>
-        </Container>
-      </StyledHero>
-    </>
+        </Grid>
+      </Container>
+    </StyledHero>
   );
 }
 
