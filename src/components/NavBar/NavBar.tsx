@@ -55,7 +55,7 @@ const NavBar = () => {
   const appBarStyles = {
     backgroundColor: theme.palette.common.white,
     position: 'static',
-    display: { xs: 'none', sm: 'flex' } // Hide on small screens
+    display: { xs: 'none', sm: 'flex' } 
   };
 
   const boxStyles = {

@@ -6,6 +6,7 @@ const FloatingButton = styled(Fab)(({ theme }) => ({
   position: 'fixed',
   bottom: theme.spacing(2),
   right: theme.spacing(2),
+  zIndex: '1300',
   backgroundColor: '#25D366',
   color: '#fff',
   '&:hover': {
