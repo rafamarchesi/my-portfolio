@@ -38,9 +38,42 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/rafamarchesi/my-portfolio.git
+   ```
+
+2. Navegue para o diretório do projeto:
+   ```bash
+   cd my-portfolio  
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+
+## Contribuições
+
+Se você quiser contribuir para este projeto, fique à vontade para abrir uma issue ou enviar um pull request.
 
 
-Esse arquivo deve ser salvo como `README.md` na raiz do seu repositório. Se precisar de mais alguma ajuda, estou aqui!
+## Licença
+
+Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+
+## Contato
+
+Você pode me encontrar em [LinkedIn](https://www.linkedin.com/in/rafaela-marchesi-barrionuevo-81ba7b10b/) ou me enviar um e-mail para [rafamarchesi2@gmail.com](mailto:rafamarchesi2@gmail.com).
+
+   
+  
+
+
+
+
+
+
 
 
 
